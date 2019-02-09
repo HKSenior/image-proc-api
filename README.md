@@ -1,6 +1,9 @@
 ## Image Processing API
 A simple Flask API that uses tensorflow for image classification.
 
+## EC2 URL
+ec2-54-209-80-71.compute-1.amazonaws.com:5000
+
 ## Endpoints
 There are 3 main endpoints.
 
@@ -21,5 +24,8 @@ There are 3 main endpoints.
         - api_key - You're users API Key. If you don't have one use the register endpoint to create one.
         - url - A valid url pointing to an image for classification.
     - Returned
-    
+        - JSON object with the image classification.
 - refill
+    - Parameters
+        - api_key - You're users API Key. If you don't have one use the register endpoint to create one.
+        - amount - The number of tokens to add to your account. The API is expecting a string value.
