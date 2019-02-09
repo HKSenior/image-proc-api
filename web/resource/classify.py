@@ -3,6 +3,7 @@ import subprocess
 
 from flask import jsonify, request 
 from flask_restful import Resource
+import validators
 import requests
 
 from common import keyExists, genJSON
@@ -35,6 +36,10 @@ class Classify(Resource):
         # Check if API key exists in the database
         if not keyExists(self.db, apiKey):
             return genJSON(400, "Invalid API Key")
+
+        # Check if the url is valid
+        if not validators.url(url):
+            return genJSON(400, "Invalid URL")
         
         # Check if the user has enough tokens
         tokens = self.db.find({"api_key":apiKey})[0]["tokens"]
