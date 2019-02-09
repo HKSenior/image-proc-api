@@ -6,6 +6,7 @@ import bcrypt
 
 from common import userExists, genJSON
 
+
 class Register(Resource):
     """ Controller class for registering new users  """
     

@@ -7,6 +7,7 @@ import requests
 
 from common import keyExists, genJSON
 
+
 class Classify(Resource):
     """ Controller class for classifing the given images """
     

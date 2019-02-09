@@ -10,13 +10,12 @@ from register import Register
 from classify import Classify
 from refill import Refill
 
-
+# Setup
 app = Flask(__name__)
 api = Api(app)
 client = MongoClient("mongodb://database:27017")
 db = client.ImageRecognition
 users = db["users"]
-
 
 # Add resources
 api.add_resource(
