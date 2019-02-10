@@ -1,6 +1,10 @@
 ## Image Processing API
 A simple Flask API that uses tensorflow for image classification.
 
+## Build
+The Current build is broken.
+The most recent build to work is commit - d6a18b6
+
 ## EC2 URL
 ec2-54-209-80-71.compute-1.amazonaws.com:5000
 
