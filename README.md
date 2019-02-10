@@ -13,10 +13,10 @@ In order to start the server in the docker container run the following command:
 ```
 docker-compose up
 ```
-(Note: When classifying your first image there will be a delay because of the time required to download the iamge models.)
+(Note: When classifying your first image there will be a delay because of the time required to download the image models.)
 
 ## Endpoints
-There are 3 main endpoints.
+There are 3 main endpoints (register/, classify/, refill/).
 
 - register
     - Parameters
