@@ -4,6 +4,17 @@ A simple Flask API that uses tensorflow for image classification.
 ## EC2 URL
 ec2-54-209-80-71.compute-1.amazonaws.com:5000
 
+## Dependencies
+Docker is needed to run this application.
+If you do not have Docker installed visit [here](https://hub.docker.com/search/?type=edition&offering=community)
+
+## How to use?
+In order to start the server in the docker container run the following command:
+```
+docker-compose up
+```
+(Note: When classifying your first image there will be a delay because of the time required to download the iamge models.)
+
 ## Endpoints
 There are 3 main endpoints.
 
