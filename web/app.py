@@ -10,6 +10,7 @@ from register import Register
 from classify import Classify
 from refill import Refill
 
+
 # Setup
 app = Flask(__name__)
 api = Api(app)
